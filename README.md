@@ -1,5 +1,5 @@
 
-# Math-series Project (LAB01 - Class 02 -TDD)
+# Math-series Project (LAB02 - Class 02 -TDD)
 ## Overview
 
 The math-series project is a Python application that test functions. The project was created as part of LAB02 for Class 02 by Sara Alkhateeb.
