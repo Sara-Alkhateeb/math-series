@@ -1,6 +1,9 @@
 import pytest
 from series.series import fibonacci , lucas , sum_series
 
+'''
+If the x=0 and y =1 n will gose into fibonacci, otherwise n will gose into lucas
+'''
 
 
 def  test_fibonacci_zero ():
@@ -35,7 +38,7 @@ def  test_lucas_two ():
 
 def test_sum_series():
     actual=sum_series(3,3,3)
-    expected=4
+    expected=9
     assert actual == expected
 
 def test_sum_series_one():
