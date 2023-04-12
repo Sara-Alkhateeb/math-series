@@ -28,5 +28,8 @@ def sum_series(n, x=0 , y=1):
         return lucas(n)
 
     else :
-        return sum_series(n-1 , x , y)+ sum_series(n-2 , x , y)
+        if (n==0 or n==1) :
+            return n
+        else:
+         return sum_series(n-1 , x , y)+ sum_series(n-2 , x , y)
     
