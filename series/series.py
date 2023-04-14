@@ -18,18 +18,17 @@ def lucas(n):
         return lucas(n-1) + lucas(n-2)
     
     
-def sum_series(n, x=0 , y=1):
-    ''' (n = index of the elemnt in series, x, y = integers) ''' 
-
-    if (x==0 and y==1):
+def sum_series(n, x=0, y=1):
+    ''' (n = index of the element in series, x, y = integers) '''
+    if x == 0 and y == 1:
         return fibonacci(n)
-
-    elif (x==2 and y==1) :
+    elif x == 2 and y == 1:
         return lucas(n)
-
-    else :
-        if (n==0 or n==1) :
-            return n
+    else:
+        if n == 0:
+            return x
+        elif n == 1:
+            return y
         else:
-         return sum_series(n-1 , x , y)+ sum_series(n-2 , x , y)
+            return sum_series(n-1, x, y) + sum_series(n-2, x, y)
     
